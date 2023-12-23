@@ -3,6 +3,7 @@
 public class Singleton
 {
     private static Singleton Instance;
+    
     private Singleton()
     {
         
