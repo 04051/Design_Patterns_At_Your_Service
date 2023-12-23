@@ -3,7 +3,7 @@ namespace ClassLibrary;
 
 public class Singleton
 {
-    private static Singleton Instance = new Singleton();
+    private static Singleton Instance;
     private Singleton()
     {
         
@@ -12,7 +12,7 @@ public class Singleton
     public static Singleton GetInstance()
     {
         if (Instance == null)
-            return new Singleton();
+            Instance = new Singleton();
         return Instance;
     }
 }
