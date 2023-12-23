@@ -1,4 +1,6 @@
-﻿namespace ClassLibrary;
+﻿using System.Runtime.CompilerServices;
+
+namespace ClassLibrary;
 
 public class Singleton
 {
@@ -8,6 +10,7 @@ public class Singleton
         
     }
 
+    [MethodImpl(MethodImplOptions.Synchronized)]
     public static Singleton GetInstance()
     {
         if (Instance == null)
